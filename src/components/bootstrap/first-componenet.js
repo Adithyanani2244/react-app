@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap"
+
 import Card1 from "./card"
 
 
@@ -7,12 +7,24 @@ import Card1 from "./card"
 
 const Bootstarp =()=>{
   const profile=[{
-    name:"nithin", post:"ceo", color:"red",
-    
+    name:"nithin",
+     post:"ceo",
+      color:"red",
+    id:1,
+    salary:"100k"
   },{
-    name:"adithya", post:"manger", color:"blue"
+    name:"adithya", 
+    post:"manger", 
+    color:"blue",
+    id:2,
+    salary:"100k"
   },
-  {name:"cherry", post:"employe", color:"green"}
+  {name:"cherry",
+   post:"employe",
+    color:"green"
+  ,id:3,
+  salary:"100k"
+}
 ]
   
 
@@ -25,16 +37,24 @@ const Bootstarp =()=>{
 <div className="container mt-5">
   <div className="row">
     <div className="col-sm-4">
-      <Card1 members={profile[0]} ></Card1>
+     
+      <Card1 name="nani" id="1" job="developeer"></Card1>
     </div>
     <div className="col-sm-4">
-    <Card1 members={profile[1]}></Card1>
+   
+    <Card1 name ="adithya" id="2" job="manager"></Card1>
     </div>
     <div className="col-sm-4">
-    <Card1 members={profile[2]}></Card1>
+    
+    <Card1   name = "varun" id="3" job="hr"></Card1>
     </div> 
   </div>
 </div>
+
+
+{/* {
+  profile.map((details)=><Card1 data={details}></Card1>)
+} */}
 </>
     )
 }

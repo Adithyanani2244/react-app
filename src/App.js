@@ -19,11 +19,21 @@ import Arrow from './components/example button/example';
 import Vijay from './components/example button/example';
 import Parent from './components/bootstrap/parent';
 import Child from './components/bootstrap/child';
+import Mounting from './components/lifecycle/mounting';
+import Updatephase from './components/lifecycle/updatephase';
+import Unmounting from './components/lifecycle/unmounting';
+import Navigation from './navigation Stack/navigation';
+import Useeffect from './hooks/useeffect';
+import Useeffect1 from './hooks/useeffect';
+import Useeffect2 from './hooks/useeffect2';
+import Uncontrolled from './components/forms/uncontrolled';
+import Controlled from './components/forms/controlled';
 
 
 
 
 function App() {
+  // const blueColor="blue"
   return (
     <div>
       
@@ -107,14 +117,21 @@ function App() {
   
   {/* <Light></Light> */}
     
- <Bootstarp></Bootstarp>
+ {/* <Bootstarp></Bootstarp> */}
  {/* <Button></Button>
  <Arrow></Arrow> */}
  {/* <Vijay></Vijay> */}
  {/* <Parent>
  
  </Parent> */}
-
+ 
+ {/* <Mounting color={blueColor}></Mounting> */}
+ {/* <Updatephase favcolor="blue"></Updatephase> */}
+ {/* <Unmounting></Unmounting> */}
+ <Navigation></Navigation>
+ {/* <Useeffect2/> */}
+{/* <Controlled></Controlled> */}
+{/* <Uncontrolled></Uncontrolled> */}
     </div> 
     
     
